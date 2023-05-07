@@ -22,6 +22,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   background-color: var(--color-white);
   color: var(--color-slate);
 }
@@ -60,6 +61,7 @@ img {
 .header {
   position: relative;
   z-index: var(--header-idx);
+
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -89,10 +91,13 @@ img {
   bottom: 0;
   left: 0;
   content: "";
+
   display: block;
   width: 100%;
   height: 4px;
+
   border-radius: 4px;
+
   transition-property: color var(--color-ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,15 +110,17 @@ img {
   background-color: var(--color-ocean);
 }
 .logo {
+  margin-right: 76px;
+
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-iris);
   text-decoration: none;
-  margin-right: 76px;
+
+  color: var(--color-iris);
 }
 .logo-light {
   color: var(--color-cloud);
@@ -128,7 +135,9 @@ img {
   letter-spacing: 0.02em;
   list-style: none;
   text-decoration: none;
+
   color: var(--color-navy-blue);
+
   transition-property: color var(--color-ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,6 +159,7 @@ img {
   font-style: normal;
   list-style: none;
   font-weight: 400;
+
   color: var(--color-slate);
 }
 /* Hero section */
@@ -161,7 +171,9 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   max-width: 1440px;
+
   background-color: var(--color-grey);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -171,13 +183,16 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .title-hero {
-  color: var(--color-white);
+  margin: 0 auto 48px auto;
+
+  max-width: 496px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin: 0 auto 48px auto;
   text-align: center;
+
+  color: var(--color-white);
 }
 .hero-button {
   display: block;
@@ -188,15 +203,18 @@ img {
   margin-left: 480px;
   margin-right: 480px;
   margin-top: 48px;
-  border-radius: 4px;
-  border: none;
-  background-color: var(--color-iris);
-  color: var(--color-white);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  border: none;
+  background-color: var(--color-iris);
+  color: var(--color-white);
+
   cursor: pointer;
   transition-property: background-color var(--color-ocean);
   transition-duration: 250ms;
@@ -214,10 +232,12 @@ img {
   width: 100%;
   height: 100%;
   z-index: var(--modal-idx);
+
   background: rgba(46, 47, 66, 0.4);
+  backdrop-filter: blur(4px);
+
   transition: opacity 200ms ease, visibility 200ms ease,
     backdrop-filter 200ms ease;
-  backdrop-filter: blur(4px);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -230,29 +250,34 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
+
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+
   transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
 }
 .modal-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  margin-bottom: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  width: 24px;
+  height: 24px;
+
   border-radius: 50%;
   background-color: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 24px;
-  height: 24px;
+
   transition-property: fill-color var(--color-white),
     background-color var(--color-ocean);
   transition-duration: 250ms;
@@ -267,6 +292,7 @@ img {
 .modal-form-name {
   display: block;
   margin-bottom: 16px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -274,17 +300,20 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+
   color: var(--color-navy-blue);
 }
 
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
+
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
   color: var(--color-slate);
 }
 .modal-form-field {
@@ -295,11 +324,14 @@ img {
   box-sizing: border-box;
   width: 100%;
   height: 40px;
+
   padding-left: 38px;
   padding-right: 38px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: 2px solid transparent;
+
   transition-property: border-color var(--color-iris);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -312,6 +344,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+
   transition-property: fill-color var(--color-iris);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -322,18 +355,21 @@ img {
 }
 
 .modal-form-message {
-  font-size: 12px;
-  margin-bottom: 16px;
   display: block;
   width: 100%;
   min-height: 120px;
   max-height: 180px;
-  resize: none;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
+  margin-bottom: 16px;
   padding-top: 8px;
   padding-left: 16px;
+
+  resize: none;
+  font-size: 12px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   outline: 2px solid transparent;
+
   transition-property: border-color var(--color-iris);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -344,6 +380,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
   color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-message:focus {
@@ -355,16 +392,20 @@ img {
   gap: 8px;
 }
 .modal-form-agreement-box {
+  margin-bottom: 24px;
+
   width: 16px;
   height: 16px;
+
   appearance: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-bottom: 24px;
+
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44558 0.255056C8.61838 0.089653 8.84834 -0.00178848 9.08693 2.65108e-05C9.32551 0.0018415 9.55407 0.0967713 9.72436 0.264784C9.89466 0.432797 9.99337 0.660752 9.99968 0.900549C10.006 1.14034 9.91939 1.37323 9.75816 1.55005L4.86357 7.70436C4.7794 7.79551 4.67782 7.86865 4.5649 7.91942C4.45198 7.97018 4.33003 7.99754 4.20636 7.99984C4.08268 8.00214 3.95981 7.97935 3.8451 7.93282C3.73038 7.88629 3.62618 7.81698 3.53872 7.72903L0.292827 4.46564C0.202435 4.38096 0.129933 4.27884 0.0796475 4.16537C0.0293621 4.05191 0.00232279 3.92942 0.000143182 3.80522C-0.00203643 3.68102 0.0206883 3.55765 0.0669613 3.44248C0.113234 3.3273 0.182108 3.22267 0.269473 3.13483C0.356838 3.047 0.460905 2.97775 0.575465 2.93123C0.690026 2.88471 0.812734 2.86186 0.936267 2.86405C1.0598 2.86624 1.18163 2.89343 1.29449 2.94398C1.40734 2.99454 1.50892 3.06743 1.59315 3.15831L4.16189 5.73967L8.42227 0.28219C8.42994 0.272694 8.43813 0.263635 8.4468 0.255056H8.44558Z' fill='%23F4F4FD'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0;
+
   transition-property: background-color var(--color-ocean),
     border-color var(--color-ocean);
   transition-duration: 250ms;
@@ -382,6 +423,7 @@ img {
   font-size: 12px;
   line-height: 1.17x;
   letter-spacing: 0.04em;
+
   color: #8e8f99;
 }
 .modal-form-agreement-link {
@@ -392,6 +434,7 @@ img {
   margin: 0 auto;
   width: 169px;
   height: 56px;
+
   cursor: pointer;
   justify-content: center;
   background: var(--color-iris);
@@ -399,6 +442,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
   transition-property: background-color var(--color-ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -419,6 +463,7 @@ img {
   justify-content: center;
   height: 112px;
   width: 264px;
+
   background-color: var(--color-cloud);
   border-radius: 4px;
   margin-bottom: 8px;
@@ -462,10 +507,12 @@ img {
 }
 .advantages-subtitle-item {
   margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--color-navy-blue);
 }
 
@@ -475,20 +522,23 @@ img {
 }
 
 .title-section {
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
   color: var(--color-navy-blue);
-  margin-bottom: 72px;
 }
 .whatdoing-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
   list-style-type: none;
   letter-spacing: 0.02em;
 }
@@ -506,18 +556,21 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
   list-style-type: none;
   letter-spacing: 0.02em;
 }
 
 .team-item {
   width: calc((100% - 72px) / 4);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--color-white);
   cursor: pointer;
   border-radius: 0px 0px 4px 4px;
@@ -529,10 +582,12 @@ img {
 
 .team-subtitle-item {
   margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--color-navy-blue);
 }
 
@@ -557,9 +612,11 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
+
   background-color: var(--color-iris);
   border-radius: 50%;
   fill: var(--color-cloud);
+
   transition-property: background-color var(--color-ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -603,9 +660,11 @@ img {
   align-items: center;
   width: 168px;
   height: 88px;
+
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
   color: var(--color-light-slate);
+
   transition-property: color var(--color-ocean), border-color var(--color-ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -645,19 +704,22 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
+  display: flex;
+  padding: 12px 24px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+
   background-color: var(--color-cloud);
   color: var(--color-iris);
   cursor: pointer;
-  padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
+
   transition-property: color var(--color-white),
     background-color var(--color-ocean);
   transition-duration: 250ms;
@@ -667,9 +729,10 @@ img {
 .button:hover,
 .button:focus {
   font-family: inherit;
+  font-weight: 500;
+
   color: var(--color-white);
   background-color: var(--color-ocean);
-  font-weight: 500;
   border: 1px solid transparent;
   border: 1px solid transparent;
 }
@@ -683,16 +746,19 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   list-style-type: none;
   letter-spacing: 0.02em;
 }
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   background-color: var(--color-white);
   cursor: pointer;
   border-radius: 0px 0px 4px 4px;
@@ -713,9 +779,12 @@ img {
   top: 0;
   bottom: 0;
   transform: translateY(100%);
+
   width: 100%;
   height: 100%;
+
   background-color: var(--color-iris);
+
   transition: transform 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -728,11 +797,13 @@ img {
   padding-left: 32px;
   padding-bottom: 164px;
   padding-right: 32px;
+
   color: var(--color-cloud);
   text-align: center;
 }
 .portfolio-link {
   display: block;
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -746,6 +817,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--color-slate);
 }
 .portfolio-card-content {
@@ -756,20 +828,24 @@ img {
 }
 .title-section-item {
   margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--color-navy-blue);
 }
 
 /* Footer */
 
 .footer {
+  padding: 100px 0px;
+
+  text-decoration: none;
+
   background-color: var(--color-navy-blue);
   color: var(--color-cloud);
-  text-decoration: none;
-  padding: 100px 0px;
 }
 .footer-container {
   display: flex;
@@ -785,8 +861,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-iris);
   text-decoration: none;
+
+  color: var(--color-iris);
 }
 .footer-logo.link {
   display: inline-block;
@@ -798,13 +875,15 @@ img {
   width: 264px;
 }
 .footer-social-text {
+  margin-bottom: 16px;
+
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
+
   color: var(--color-white);
-  margin-bottom: 16px;
 }
 .footer-social-icons {
   display: flex;
@@ -817,9 +896,11 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
+
   background-color: var(--color-iris);
   border-radius: 50%;
   fill: var(--color-cloud);
+
   transition-property: background-color var(--color-green);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -837,11 +918,13 @@ img {
 .footer-form-name {
   display: block;
   margin-bottom: 16px;
+
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--color-white);
 }
 .footer-subscribe-form {
@@ -851,14 +934,16 @@ img {
 }
 
 .subscribe-form-input {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  padding-left: 16px;
-  width: 264px;
-  height: 40px;
+
   color: var(--color-white);
   background-color: var(--color-navy-blue);
   border: 1px solid #ffffff;
@@ -873,10 +958,12 @@ img {
   width: 165px;
   height: 40px;
   margin-left: 24px;
+
   background-color: var(--color-iris);
   border-color: var(--color-iris);
   color: var(--color-white);
   border-radius: 4px;
+
   transition-property: background-color var(--color-green);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
