@@ -1173,7 +1173,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   padding: 32px;
   z-index: 999;
   background-color: var(--color-white);
