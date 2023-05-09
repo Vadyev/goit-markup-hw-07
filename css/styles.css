@@ -125,10 +125,11 @@ img {
   color: var(--color-navy-blue);
 }
 .menu-nav {
+  display: flex;
   align-items: center;
   margin-right: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .menu-nav {
     display: none;
   }
@@ -553,7 +554,13 @@ img {
 
 /* Our advantages */
 .advantages-section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .advantages-section {
+    padding: 120px 0;
+  }
 }
 /* Icons */
 .advantages-item-container {
@@ -571,6 +578,12 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+@media only screen and (max-width: 1157px) {
+  .advantages-icons {
+    display: none;
+  }
 }
 
 .advantages-container {
@@ -598,8 +611,22 @@ img {
   list-style-type: none;
   letter-spacing: 0.02em;
 }
-.advantages-item {
-  width: calc((100% - 72px) / 4);
+@media only screen and (max-width: 767px) {
+  .advantages-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc((100% - 72px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 .advantages-text {
   color: var(--color-slate);
@@ -614,12 +641,23 @@ img {
 
   color: var(--color-navy-blue);
 }
+@media only screen and (max-width: 1157px) {
+  .advantages-subtitle-item {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+}
 
 /* What are we doing */
 .whatdoing-section {
   padding-bottom: 120px;
 }
-
+@media only screen and (max-width: 1157px) {
+  .whatdoing-section {
+    display: none;
+  }
+}
 .title-section {
   margin-bottom: 72px;
 
@@ -647,8 +685,13 @@ img {
 
 /* Our Team  */
 .section-team {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: var(--color-cloud);
+}
+@media only screen and (min-width: 1158px) {
+  .section-team {
+    padding: 120px 0;
+  }
 }
 .team-list {
   display: flex;
@@ -661,7 +704,7 @@ img {
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -673,6 +716,16 @@ img {
   background-color: var(--color-white);
   cursor: pointer;
   border-radius: 0px 0px 4px 4px;
+}
+@media only screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 72px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 .team-card-content {
   padding: 32px 0;
@@ -744,7 +797,12 @@ img {
 }
 /* Customers */
 .customers-section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .customers-section {
+    padding: 120px 0;
+  }
 }
 
 .customers-list {
@@ -753,6 +811,7 @@ img {
   gap: 24px;
   border-bottom: 120px;
 }
+
 .customers-link {
   display: flex;
   justify-content: center;
