@@ -15,7 +15,6 @@
   --secondary-font: "Raleway", sans-serif;
   --header-idx: 10;
   --modal-idx: 100;
-  --items: 1;
 }
 /* Body */
 .body {
@@ -805,10 +804,6 @@ img {
   }
 }
 
-.customers-container {
-  width: 100%;
-}
-
 .customers-list {
   /* display: flex;
   justify-content: center;
@@ -821,6 +816,22 @@ img {
   align-items: center;
   border-bottom: 120px;
 }
+
+/* .benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .benefits-item {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .benefits-item {
+    width: 264px;
+  }
+} */
 
 .customers-link {
   display: flex;
