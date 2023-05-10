@@ -1244,14 +1244,20 @@ img {
   color: var(--color-navy-blue);
   text-decoration: none;
 }
+.mobile-menu-link.current.link {
+  color: var(--color-ocean);
+}
 
 .mobile-social-icons {
   display: flex;
   gap: 56px;
+  margin-bottom: 40px;
 }
 .mobile-contacts {
-  margin-bottom: 40px;
-  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  gap: 40px;
 }
 
 .mobile-mail-link.link {
