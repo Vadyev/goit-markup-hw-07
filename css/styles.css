@@ -1361,16 +1361,18 @@ img {
   display: flex;
   gap: 56px;
   margin-bottom: 40px;
+  padding-left: 40px;
 }
 .mobile-contacts {
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
   gap: 40px;
+  padding-left: 40px;
 }
 
 .mobile-tel-link.link {
-  gap: 40px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
