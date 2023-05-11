@@ -1327,8 +1327,8 @@ img {
   color: var(--color-navy-blue);
   text-decoration: none;
 
-  margin-bottom: auto;
-  padding: 0;
+  padding-top: 60px;
+  padding-left: 40px;
   margin: 0;
   list-style: none;
 
@@ -1343,7 +1343,6 @@ img {
 
 .mobile-menu .link {
   display: block;
-  padding: 40px;
 
   font-weight: 700;
   font-size: 36px;
