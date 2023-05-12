@@ -83,15 +83,16 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (min-width: 1158px) {
-  .header {
-    padding: 0 15px;
-  }
-}
 .header-container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--color-cornflower);
+}
+@media only screen and (max-width: 767px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .logo {
   margin-right: auto;
@@ -133,11 +134,7 @@ img {
     display: none;
   }
 }
-@media only screen and (min-width: 768px) {
-  .menu-nav {
-    margin-right: 120px;
-  }
-}
+
 .menu-list {
   display: flex;
   align-items: center;
@@ -150,7 +147,7 @@ img {
 }
 .menu-link::after {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   content: "";
 
@@ -224,12 +221,18 @@ img {
 
   color: var(--color-slate);
 }
-
+@media only screen and (max-width: 1157px) {
+  .address .link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
 /* Hero section */
 
 .hero-section {
   padding-top: 112px;
-  padding-bottom: 240px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -279,7 +282,7 @@ img {
     }
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -299,14 +302,11 @@ img {
     }
   }
 }
-@media only screen and (min-width: 768px) {
-  .hero-section {
-    padding-bottom: 204px;
-  }
-}
+
 @media only screen and (min-width: 1158px) {
   .hero-section {
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
   }
 }
@@ -419,6 +419,11 @@ img {
   border-radius: 4px;
 
   transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
+}
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: 320px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .modal {
@@ -687,8 +692,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .advantages-item {
-    width: calc((100% - 72px) / 2);
-    gap: 24px;
+    width: calc((100% - 24px) / 2);
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -720,7 +724,6 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
   }
 }
 
@@ -1145,7 +1148,7 @@ img {
   .footer-container {
     flex-wrap: wrap;
     gap: 72px 24px;
-    padding-left: 108px;
+    width: 582px;
   }
 }
 
@@ -1250,11 +1253,7 @@ img {
 
   color: var(--color-white);
 }
-@media only screen and (max-width: 768px) {
-  .footer-form-name {
-    text-align: center;
-  }
-}
+
 .footer-subscribe-form {
   display: flex;
 }
@@ -1288,7 +1287,7 @@ img {
 .subscribe-form-input::placeholder {
   color: var(--color-white);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
   .subscribe-form-input {
     width: 398px;
   }
@@ -1351,11 +1350,14 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  padding-top: 80px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 32px;
   z-index: 999;
   background-color: var(--color-white);
   overflow-y: auto;
@@ -1382,8 +1384,6 @@ img {
   color: var(--color-navy-blue);
   text-decoration: none;
 
-  padding-top: 60px;
-  padding-left: 40px;
   margin: 0;
   list-style: none;
 
@@ -1416,14 +1416,17 @@ img {
   display: flex;
   gap: 56px;
   margin-bottom: 40px;
-  padding-left: 40px;
+}
+@media only screen and (max-width: 427px) {
+  .mobile-social-icons {
+    gap: 32px;
+  }
 }
 .mobile-contacts {
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
   gap: 40px;
-  padding-left: 40px;
 }
 
 .mobile-tel-link.link {
@@ -1433,6 +1436,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-iris);
   border: none;
+}
+@media only screen and (max-width: 427px) {
+  .mobile-tel-link.link {
+    font-size: 26px;
+  }
 }
 .mobile-mail-link.link {
   font-size: 20px;
